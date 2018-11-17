@@ -73,8 +73,6 @@ class MainWindow(QQuickWindow):
 
         self._viewport_rect = QRectF(0, 0, 1.0, 1.0)
 
-        self.closing.connect(self.preClosing)
-
         Application.getInstance().setMainWindow(self)
         self._fullscreen = False
 
